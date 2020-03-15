@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+    
+\pagestyle{fancy}
+\fancyhf{}
+    
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{郭}{志}{ 阿里云CDN实习生
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.25\textwidth} 
+
+\section{个人信息}
+\sectionsep
+\descript{姓名: 郭志}
+\descript{出生年月: 1999/12}
+\descript{居住地: 上海闵行}
+\descript{Tel: 18621813268}
+\descript{Mail: qtxuning1999@sjtu.edu.cn}
+\descript{Github: Github:// \href{https://github.com/Guozhi-explore}{\bf Guozhi}}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{教育经历} 
+\sectionsep
+
+\subsection{上海交通大学}
+\descript{软件学院软件工程}
+\descript{系统软件方向}
+\descript{本科三年级在读}
+\location{2017.09-2021.07}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{成绩排名}
+\sectionsep
+核心学积分 87.9  \\
+学积分专业排名  19/105 \\
+英语六级成绩  549
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{修读课程}
+\sectionsep
+计算机系统基础 93,97,92 \\
+软件基础实践 99\\
+计算机系统工程 85 \\
+编译原理与技术 95 \\
+Web开发 93 \\
+数据结构 91 \\
+项目管理及软件开发 89 \\
+ \sectionsep
+ \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{技能}
+\sectionsep
+\subsection{编程语言}
+\location{超过 10000 行}
+\textbf{C++} \\
+\location{1000 - 5000 行}
+C \textbullet{} Java \\
+\location{低于 1000 行}
+Python \textbullet{} Javascript \\ 
+\sectionsep
+
+\subsection{开发}
+\location{一般}
+SpringBoot  \textbullet{} MySQL \\
+\location{了解}
+Nginx \textbullet{} MongoDB \textbullet{} \\
+Mahout \textbullet{} Vue \textbullet{} Gdb\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.73\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{项目}
+\sectionsep
+\runsubsection{\href{https://github.com/Guozhi-explore/Compilers}{Tiger语言编译器}}
+\descript{课程个人作业}
+\location{2019.09 - 2019.12}
+\vspace{\topsep}
+\begin{tightemize}
+    \item \textbf{实现了从源代码到x86-64代码生成的完整编译器} \textbf{答辩得分 39/40}
+    \item 使用flexc++、bisonc++进行词法分析、语法分析
+    \item 对语法分析后的短语结构生成合适抽象语法树
+    \item 对抽象语法树绑定变量与声明，进行语法检查
+    \item 按照 \textbf{x86-64}规范，将变量和参数分配于栈帧
+    \item 转换与程序语言和目标机器无关的 \textbf{中间表达树}
+    \item 将中间表达树节点合并成x86-64指令对应块
+    \item 对指令进行控制流分析，变量进行数据流分析
+    \item 用\textbf{启发式的着色算法}对变量和参数选择寄存器
+    \item 用寄存器名替代临时变量名，生成x86-64汇编代码
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{\href{https://github.com/Guozhi-explore/NFS}{网络文件系统}}
+\descript{课程个人作业}
+\location{2019.09-2019.11}
+\begin{tightemize}
+\item 完成了文件系统的基本接口，进一步实现fuse的基本操作
+\item 实现了客户端通过 \textbf{远程过程调用}读写文件的File Server
+\item Lock Server控制inode对应的锁从而保障一致性下实现并发
+\item 设计客户端能缓存或者等待锁，Lock Server能召回锁的 \textbf{协议}
+\item 通过客户端对锁的缓存，并发下RPC次数下降为原来的 \textbf{1/15}
+\item 设计出客户端从File Server缓存文件内容和信息的协议
+\item 通过客户端缓存文件内容与信息，RPC次数下降为原来的 \textbf{1/10}
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{\href{https://github.com/youke2019}{交大课程交流平台}}
+\descript{暑期团队作业 | 后端}
+\location{2019.07-2019.08}
+\begin{tightemize}
+\item 使用Spring-Boot框架进行后端分层架构
+\item  \textbf{MySQL与MongoDB}结合使用存储数据
+\item JUnit单元测试，Jmeter性能测试，Nginx负载均衡
+\item 借助Apache Mahout中的协同过滤算法进行课程推荐
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{深入理解计算机系统课程实验}
+\descript{课程实验 | 10个}
+\location{2019.03-2019.12}
+\begin{tightemize}
+\item 实现了\textbf{web proxy,shell,memory allocator,cpu pipeline}等项目
+\item web proxy lab中实现了一个支持HTTP协议的并发proxy
+\item 掌握了并发编程，网络，异常，汇编，安全等重要的系统编程技能
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{\href{https://github.com/Guozhi-explore/AIsnake}{AI贪吃蛇}}
+\descript{课程个人作业 | \textbf{满分}}
+\location{2019.06-2019.06}
+\begin{tightemize}
+\item 使用Qt Gui
+\item 实现了双人对战，人机PK等功能
+\item 采用BFS算法进行寻路
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{所获奖项} 
+\begin{tabular}{rll}
+2018         & 奖学金  & \textbf{国家励志奖学金} \\
+2018	     & 奖学金  & 上海交通大学B类奖学金 \\
+2018	     & 二等奖  & 上海交通大学扫地机器人大赛 \\
+2019         & 三等奖  & 上海交通大学软件展示会\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
