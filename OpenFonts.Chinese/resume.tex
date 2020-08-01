@@ -65,7 +65,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{郭}{志}{ 蚂蚁金服C++研发实习生
+\namesection{郭}{志}{ \href{https://iaguozhi.github.io}{\bf https://iaguozhi.github.io }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,7 +83,7 @@
 \descript{居住地: 上海闵行}
 \descript{Tel: 18621813268}
 \descript{Mail: qtxuning1999@sjtu.edu.cn}
-\descript{Github: Github:// \href{https://github.com/Guozhi-explore}{\bf Guozhi}}
+\descript{Github: Github:// \href{https://github.com/iaGuoZhi}{\bf Guozhi}}
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -95,7 +95,7 @@
 \subsection{上海交通大学}
 \descript{软件学院软件工程}
 \descript{系统软件方向}
-\descript{本科三年级在读}
+\descript{本科四年级在读}
 \location{2017.09-2021.07}
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,8 +103,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{成绩排名}
 \sectionsep
-核心学积分 87.9  \\
-学积分专业排名  19/105 \\
+核心学积分 88.5  \\
+学积分专业排名  16/103 \\
 英语六级成绩  549
 \sectionsep
 
@@ -114,15 +114,16 @@
 
 \section{修读课程}
 \sectionsep
-计算机系统基础 93,97,92 \\
-软件基础实践 99\\
-计算机系统工程 85 \\
-编译原理与技术 95 \\
 Web开发 93 \\
 数据结构 91 \\
 项目管理及软件开发 89 \\
+计算机系统基础 93,97,92 \\
+编译原理与技术 95 \\
+计算机体系结构 93 \\
+操作系统 96 \\
+分布式系统 95 \\
  \sectionsep
- \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,19 +131,19 @@ Web开发 93 \\
 \section{技能}
 \sectionsep
 \subsection{编程语言}
-\location{超过 10000 行}
-\textbf{C++} \\
 \location{1000 - 5000 行}
-C \textbullet{} Java \\
+C++ \textbullet{} C \textbullet{} Java \textbullet{} go\\
 \location{低于 1000 行}
-Python \textbullet{} Javascript \\ 
+Python \textbullet{} Javascript \textbullet{} Scala\\ 
 \sectionsep
 
 \subsection{开发}
 \location{一般}
-SpringBoot  \textbullet{} MySQL \\
+SpringBoot  \textbullet{} MySQL \textbullet{} ZooKeeper\\
 \location{了解}
 Nginx \textbullet{} MongoDB \textbullet{} \\
+MapReduce \textbullet{} Django \textbullet{} \\
+Docker \textbullet{}  Jenkins \textbullet{} \\
 Mahout \textbullet{} Vue \textbullet{} Gdb\\
 
 
@@ -159,13 +160,23 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{项目}
+\section{实习经历} 
+\runsubsection{{字节跳动基础架构实习生}}
+\descript{研发平台 | 上海}
+\location{2020.07-current}
+\vspace{\topsep}
+\begin{tightemize}
+	\item 字节跳动构建平台相关的学习与工作
+\end{tightemize}
 \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{项目} 
 \runsubsection{\href{https://github.com/Guozhi-explore/Compilers}{Tiger语言编译器}}
 \descript{课程个人作业}
 \location{2019.09 - 2019.12}
-\vspace{\topsep}
 \begin{tightemize}
     \item \textbf{实现了从源代码到x86-64代码生成的完整编译器} \textbf{答辩得分 39/40}
     \item 使用flexc++、bisonc++进行词法分析、语法分析
@@ -173,7 +184,6 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
     \item 对抽象语法树绑定变量与声明，进行语法检查
     \item 按照 \textbf{x86-64}规范，将变量和参数分配于栈帧
     \item 转换与程序语言和目标机器无关的 \textbf{中间表达树}
-    \item 将中间表达树节点合并成x86-64指令对应块
     \item 对指令进行控制流分析，变量进行数据流分析
     \item 用\textbf{启发式的着色算法}对变量和参数选择寄存器
     \item 用寄存器名替代临时变量名，生成x86-64汇编代码
@@ -196,6 +206,19 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \sectionsep
 \sectionsep
 
+\runsubsection{\href{https://github.com/iaGuoZhi/GIKV}{分布式kv存储}}
+\descript{课程个人作业}
+\location{2020.06 - 2020.06}
+\begin{tightemize}
+	\item 使用\textbf{ZooKeeper}实现服务发现与分布式同步
+	\item 通过\textbf{一致性哈希}实现数据切分与节点动态添加删除
+	\item 设计惰性迁移策略，最小化节点加入时已有数据迁移
+	\item 管理节点与数据节点都实现备份节点，保障可用性
+	\item 实现viewServer机制区分数据节点内部的主从节点
+\end{tightemize}
+\sectionsep
+\sectionsep
+
 \runsubsection{\href{https://github.com/youke2019}{交大课程交流平台}}
 \descript{暑期团队作业 | 后端}
 \location{2019.07-2019.08}
@@ -208,29 +231,6 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \sectionsep
 \sectionsep
 
-\runsubsection{深入理解计算机系统课程实验}
-\descript{课程实验 | 10个}
-\location{2019.03-2019.12}
-\begin{tightemize}
-\item 实现了\textbf{web proxy,shell,memory allocator,cpu pipeline}等项目
-\item web proxy lab中实现了一个支持HTTP协议的并发proxy
-\item 掌握了并发编程，网络，异常，汇编，安全等重要的系统编程技能
-\end{tightemize}
-\sectionsep
-\sectionsep
-
-\runsubsection{\href{https://github.com/Guozhi-explore/AIsnake}{AI贪吃蛇}}
-\descript{课程个人作业 | \textbf{满分}}
-\location{2019.06-2019.06}
-\begin{tightemize}
-\item 使用Qt Gui
-\item 实现了双人对战，人机PK等功能
-\item 采用BFS算法进行寻路
-\end{tightemize}
-\sectionsep
-\sectionsep
-
-
 
 
 
@@ -242,7 +242,7 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \begin{tabular}{rll}
 2018         & 奖学金  & \textbf{国家励志奖学金} \\
 2018	     & 奖学金  & 上海交通大学B类奖学金 \\
-2018	     & 二等奖  & 上海交通大学扫地机器人大赛 \\
+2018	     & 第二名  & 上海交通大学扫地机器人大赛 \\
 2019         & 三等奖  & 上海交通大学软件展示会\\
 \end{tabular}
 \sectionsep
