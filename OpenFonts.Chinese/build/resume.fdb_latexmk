@@ -1,10 +1,10 @@
 # Fdb version 3
-["xdvipdfmx"] 1601902809 "build/resume.xdv" "build/resume.pdf" "build/resume" 1601902810
-  "build/resume.xdv" 1601902809 24464 e4fd8ac3607b672770f78d463bdcc67c "xelatex"
+["xdvipdfmx"] 1602580214 "build/resume.xdv" "build/resume.pdf" "build/resume" 1602580226
+  "build/resume.xdv" 1602580214 24528 04c144c2ee3f89ea40d0dc487ff8cf47 "xelatex"
   (generated)
   "build/resume.pdf"
-["xelatex"] 1601902804 "/run/media/gz/G/blog/resume/resume-cn/OpenFonts.Chinese/resume.tex" "build/resume.xdv" "resume" 1601902810
-  "/run/media/gz/G/blog/resume/resume-cn/OpenFonts.Chinese/resume.tex" 1601902805 7934 4bd7be47bffdea11f51a73158aefb74a ""
+["xelatex"] 1602580213 "/run/media/gz/G/blog/resume/resume-cn/OpenFonts.Chinese/resume.tex" "build/resume.xdv" "resume" 1602580226
+  "/run/media/gz/G/blog/resume/resume-cn/OpenFonts.Chinese/resume.tex" 1602580225 7943 ca920bd2fb25aa8c1af406ea79ca7725 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1591545468 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1591545468 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1591545468 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -66,12 +66,12 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1599534003 5164752 64c6f5910aef67a3d8e3ff2f9a07e565 ""
-  "build/resume.aux" 1601902809 1845 efafe446f547f673c2cd16ce8a725a51 "xelatex"
-  "build/resume.out" 1601902809 837 7d89a0b79593b9e1d696e880958948a6 "xelatex"
+  "build/resume.aux" 1602580214 1845 efafe446f547f673c2cd16ce8a725a51 "xelatex"
+  "build/resume.out" 1602580214 837 7d89a0b79593b9e1d696e880958948a6 "xelatex"
   "deedy-resume-openfont.cls" 1599384256 3084 c324d8d1d31b3da64bc2f29eb46e6a22 ""
-  "resume.tex" 1601902805 7934 4bd7be47bffdea11f51a73158aefb74a ""
+  "resume.tex" 1602580225 7943 ca920bd2fb25aa8c1af406ea79ca7725 ""
   (generated)
-  "build/resume.aux"
-  "build/resume.xdv"
-  "build/resume.log"
   "build/resume.out"
+  "build/resume.aux"
+  "build/resume.log"
+  "build/resume.xdv"
